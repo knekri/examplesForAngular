@@ -11,6 +11,8 @@ import {UserService} from './service/user.service';
 import {AuthenticationService} from './service/authentication.service';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {CustomMaterialModule} from './material.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NoopAnimationsModule,
+    CustomMaterialModule
   ],
   providers: [AuthenticationService, UserService],
   bootstrap: [AppComponent]
