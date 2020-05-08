@@ -13,8 +13,8 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  // private userUrl = 'http://localhost:8090/exampleSpringboot/api/';
-  private userUrl = '/api'; // endpoint for proxy config, command to app launch: npm start
+  private userUrl = 'http://localhost:8090/exampleSpringboot/api/';
+  // private userUrl = '/api'; // endpoint for proxy config, command to app launch: npm start
 
   public getUsers() {
     return this.http.get<User[]>(this.userUrl);
